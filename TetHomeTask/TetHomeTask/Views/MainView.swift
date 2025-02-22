@@ -7,26 +7,19 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel()
-    @State private var searchText = ""
     @State private var areCountriesLoaded = false
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.countriesViewModel.countries.filter { country in
-                    searchText.isEmpty || country.name.common.localizedCaseInsensitiveContains(searchText) == true
-                    || country.translations.contains { _, translation in
-                        translation.common.localizedCaseInsensitiveContains(searchText) == true
-                    }
-                }
-                ) { country in
+                ForEach(viewModel.filteredCountries) { country in
                     NavigationLink(destination: DetailsView(
                         viewModel: DetailsViewModel(selectedCountry: country, countriesViewModel: viewModel.countriesViewModel))) {
                             CountryCell(country: country)
                         }
                 }
             }
-            .searchable(text: $searchText, prompt: "Search Countries")
+            .searchable(text: $viewModel.searchText, prompt: "Search Countries")
             .onAppear {
                 if !areCountriesLoaded {
                     Task {
