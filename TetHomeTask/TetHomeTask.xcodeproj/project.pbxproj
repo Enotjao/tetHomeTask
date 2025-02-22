@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		828D82532D68930000A1C66A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D82522D68930000A1C66A /* MapView.swift */; };
+		828D82602D68BDF200A1C66A /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D825F2D68BDF200A1C66A /* CountriesViewModel.swift */; };
+		828D82622D68D6FC00A1C66A /* PropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D82612D68D6FC00A1C66A /* PropertyCell.swift */; };
+		828D82652D68DC7F00A1C66A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D82642D68DC7F00A1C66A /* Colors.swift */; };
+		828D82672D68E07100A1C66A /* CapitalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D82662D68E07100A1C66A /* CapitalInfo.swift */; };
+		828D82692D68E09600A1C66A /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D82682D68E09600A1C66A /* Name.swift */; };
+		828D826B2D68E0CA00A1C66A /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D826A2D68E0CA00A1C66A /* Translation.swift */; };
+		828D826D2D6A87B800A1C66A /* FlagsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828D826C2D6A87B800A1C66A /* FlagsAPI.swift */; };
+		82D7A6F92D6716AB00B2E0CA /* TetHomeTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A6F82D6716AB00B2E0CA /* TetHomeTaskApp.swift */; };
+		82D7A6FB2D6716AB00B2E0CA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A6FA2D6716AB00B2E0CA /* MainView.swift */; };
+		82D7A6FD2D6716AF00B2E0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D7A6FC2D6716AF00B2E0CA /* Assets.xcassets */; };
+		82D7A7012D6716B000B2E0CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D7A7002D6716B000B2E0CA /* Preview Assets.xcassets */; };
+		82D7A7082D6716F700B2E0CA /* CoutriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A7072D6716F700B2E0CA /* CoutriesAPI.swift */; };
+		82D7A70A2D6719F100B2E0CA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A7092D6719F100B2E0CA /* MainViewModel.swift */; };
+		82D7A7122D67255D00B2E0CA /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A7112D67255D00B2E0CA /* Country.swift */; };
+		82D7A7142D67349300B2E0CA /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A7132D67349300B2E0CA /* CountryCell.swift */; };
+		82D7A7182D673CC400B2E0CA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A7172D673CC400B2E0CA /* DetailsView.swift */; };
+		82D7A71A2D673ECA00B2E0CA /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A7192D673ECA00B2E0CA /* AsyncImageView.swift */; };
+		82D7A71C2D67D6C200B2E0CA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A71B2D67D6C200B2E0CA /* Location.swift */; };
+		82D7A71E2D67D95B00B2E0CA /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7A71D2D67D95B00B2E0CA /* DetailsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		828D82522D68930000A1C66A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		828D825F2D68BDF200A1C66A /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		828D82612D68D6FC00A1C66A /* PropertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCell.swift; sourceTree = "<group>"; };
+		828D82642D68DC7F00A1C66A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		828D82662D68E07100A1C66A /* CapitalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalInfo.swift; sourceTree = "<group>"; };
+		828D82682D68E09600A1C66A /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		828D826A2D68E0CA00A1C66A /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		828D826C2D6A87B800A1C66A /* FlagsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsAPI.swift; sourceTree = "<group>"; };
+		82D7A6F52D6716AB00B2E0CA /* TetHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D7A6F82D6716AB00B2E0CA /* TetHomeTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetHomeTaskApp.swift; sourceTree = "<group>"; };
+		82D7A6FA2D6716AB00B2E0CA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		82D7A6FC2D6716AF00B2E0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82D7A6FE2D6716B000B2E0CA /* TetHomeTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TetHomeTask.entitlements; sourceTree = "<group>"; };
+		82D7A7002D6716B000B2E0CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82D7A7072D6716F700B2E0CA /* CoutriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoutriesAPI.swift; sourceTree = "<group>"; };
+		82D7A7092D6719F100B2E0CA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		82D7A7112D67255D00B2E0CA /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		82D7A7132D67349300B2E0CA /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		82D7A7172D673CC400B2E0CA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		82D7A7192D673ECA00B2E0CA /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		82D7A71B2D67D6C200B2E0CA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		82D7A71D2D67D95B00B2E0CA /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82D7A6F22D6716AB00B2E0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		822668032D67E03B0073E38B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82D7A71B2D67D6C200B2E0CA /* Location.swift */,
+				82D7A7112D67255D00B2E0CA /* Country.swift */,
+				828D82662D68E07100A1C66A /* CapitalInfo.swift */,
+				828D82682D68E09600A1C66A /* Name.swift */,
+				828D826A2D68E0CA00A1C66A /* Translation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		822668042D67E05C0073E38B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				82D7A71D2D67D95B00B2E0CA /* DetailsViewModel.swift */,
+				82D7A7092D6719F100B2E0CA /* MainViewModel.swift */,
+				828D825F2D68BDF200A1C66A /* CountriesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		822668052D67E0750073E38B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82D7A6FA2D6716AB00B2E0CA /* MainView.swift */,
+				82D7A7192D673ECA00B2E0CA /* AsyncImageView.swift */,
+				82D7A7172D673CC400B2E0CA /* DetailsView.swift */,
+				828D82522D68930000A1C66A /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		828D82632D68D8FD00A1C66A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				828D82612D68D6FC00A1C66A /* PropertyCell.swift */,
+				82D7A7132D67349300B2E0CA /* CountryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		828D826E2D6A945B00A1C66A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				828D826C2D6A87B800A1C66A /* FlagsAPI.swift */,
+				82D7A7072D6716F700B2E0CA /* CoutriesAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		82D7A6EC2D6716AB00B2E0CA = {
+			isa = PBXGroup;
+			children = (
+				82D7A6F72D6716AB00B2E0CA /* TetHomeTask */,
+				82D7A6F62D6716AB00B2E0CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82D7A6F62D6716AB00B2E0CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82D7A6F52D6716AB00B2E0CA /* TetHomeTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82D7A6F72D6716AB00B2E0CA /* TetHomeTask */ = {
+			isa = PBXGroup;
+			children = (
+				828D826E2D6A945B00A1C66A /* API */,
+				828D82632D68D8FD00A1C66A /* Cells */,
+				822668052D67E0750073E38B /* Views */,
+				822668042D67E05C0073E38B /* ViewModels */,
+				822668032D67E03B0073E38B /* Models */,
+				82D7A6F82D6716AB00B2E0CA /* TetHomeTaskApp.swift */,
+				82D7A6FC2D6716AF00B2E0CA /* Assets.xcassets */,
+				82D7A6FE2D6716B000B2E0CA /* TetHomeTask.entitlements */,
+				82D7A6FF2D6716B000B2E0CA /* Preview Content */,
+				828D82642D68DC7F00A1C66A /* Colors.swift */,
+			);
+			path = TetHomeTask;
+			sourceTree = "<group>";
+		};
+		82D7A6FF2D6716B000B2E0CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82D7A7002D6716B000B2E0CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82D7A6F42D6716AB00B2E0CA /* TetHomeTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D7A7042D6716B000B2E0CA /* Build configuration list for PBXNativeTarget "TetHomeTask" */;
+			buildPhases = (
+				82D7A6F12D6716AB00B2E0CA /* Sources */,
+				82D7A6F22D6716AB00B2E0CA /* Frameworks */,
+				82D7A6F32D6716AB00B2E0CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetHomeTask;
+			productName = TetHomeTask;
+			productReference = 82D7A6F52D6716AB00B2E0CA /* TetHomeTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82D7A6ED2D6716AB00B2E0CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					82D7A6F42D6716AB00B2E0CA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 82D7A6F02D6716AB00B2E0CA /* Build configuration list for PBXProject "TetHomeTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82D7A6EC2D6716AB00B2E0CA;
+			productRefGroup = 82D7A6F62D6716AB00B2E0CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82D7A6F42D6716AB00B2E0CA /* TetHomeTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82D7A6F32D6716AB00B2E0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D7A7012D6716B000B2E0CA /* Preview Assets.xcassets in Resources */,
+				82D7A6FD2D6716AF00B2E0CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82D7A6F12D6716AB00B2E0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828D82672D68E07100A1C66A /* CapitalInfo.swift in Sources */,
+				82D7A7082D6716F700B2E0CA /* CoutriesAPI.swift in Sources */,
+				82D7A6FB2D6716AB00B2E0CA /* MainView.swift in Sources */,
+				82D7A7142D67349300B2E0CA /* CountryCell.swift in Sources */,
+				828D82652D68DC7F00A1C66A /* Colors.swift in Sources */,
+				828D82622D68D6FC00A1C66A /* PropertyCell.swift in Sources */,
+				828D82692D68E09600A1C66A /* Name.swift in Sources */,
+				828D82532D68930000A1C66A /* MapView.swift in Sources */,
+				82D7A6F92D6716AB00B2E0CA /* TetHomeTaskApp.swift in Sources */,
+				82D7A71C2D67D6C200B2E0CA /* Location.swift in Sources */,
+				828D826B2D68E0CA00A1C66A /* Translation.swift in Sources */,
+				82D7A71A2D673ECA00B2E0CA /* AsyncImageView.swift in Sources */,
+				82D7A7182D673CC400B2E0CA /* DetailsView.swift in Sources */,
+				82D7A71E2D67D95B00B2E0CA /* DetailsViewModel.swift in Sources */,
+				828D826D2D6A87B800A1C66A /* FlagsAPI.swift in Sources */,
+				828D82602D68BDF200A1C66A /* CountriesViewModel.swift in Sources */,
+				82D7A7122D67255D00B2E0CA /* Country.swift in Sources */,
+				82D7A70A2D6719F100B2E0CA /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82D7A7022D6716B000B2E0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82D7A7032D6716B000B2E0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		82D7A7052D6716B000B2E0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TetHomeTask/TetHomeTask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TetHomeTask/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintos.home.task.TetHomeTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82D7A7062D6716B000B2E0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TetHomeTask/TetHomeTask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TetHomeTask/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintos.home.task.TetHomeTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82D7A6F02D6716AB00B2E0CA /* Build configuration list for PBXProject "TetHomeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D7A7022D6716B000B2E0CA /* Debug */,
+				82D7A7032D6716B000B2E0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82D7A7042D6716B000B2E0CA /* Build configuration list for PBXNativeTarget "TetHomeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D7A7052D6716B000B2E0CA /* Debug */,
+				82D7A7062D6716B000B2E0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82D7A6ED2D6716AB00B2E0CA /* Project object */;
+}
