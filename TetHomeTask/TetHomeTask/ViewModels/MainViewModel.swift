@@ -40,13 +40,4 @@ class MainViewModel: ObservableObject {
             debugPrint("Error: \(error.localizedDescription)")
         }
     }
-
-    func ad()  {
-        viewModel.countriesViewModel.countries.filter { country in
-                    searchText.isEmpty || country.name.common.localizedCaseInsensitiveContains(searchText) == true
-                    || country.translations.contains { _, translation in
-                        translation.common.localizedCaseInsensitiveContains(searchText) == true
-                    }
-                }
-    }
 }
