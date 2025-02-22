@@ -7,14 +7,13 @@ import SwiftUI
 
 struct DetailsView: View {
     @ObservedObject var viewModel: DetailsViewModel
-    @State private var selectedLanguage: String?
  
     var body: some View {
         VStack(alignment: .leading) {
             List {
                 Section {
                     HStack {
-                        AsyncImageView(url: "https://flagsapi.com/\(viewModel.selectedCountry.cca2)/flat/64.png")
+                        AsyncImageView(url: viewModel.countryFlagImageUrl)
                         VStack (alignment: .leading){
                             Text(viewModel.selectedCountry.name.common).bold()
                             Text(viewModel.selectedCountry.name.official).italic()
@@ -24,8 +23,8 @@ struct DetailsView: View {
                         Button(action: {
                             viewModel.addToFavorites()
                         }) {
-                            Image(systemName: viewModel.selectedCountry.isFavorite ?? false ? "star.fill" : "star")
-                                .foregroundColor(viewModel.selectedCountry.isFavorite ?? false ? Colors.themeFavoriteSelectedForeground : Colors.themeFavoriteUnselectedForeground)
+                            Image(systemName: viewModel.isFavouriteCountry ? "star.fill" : "star")
+                                .foregroundColor(viewModel.isFavouriteCountry ? Colors.themeFavoriteSelectedForeground : Colors.themeFavoriteUnselectedForeground)
                                 
                         }
                     }
@@ -49,7 +48,7 @@ struct DetailsView: View {
                                 .foregroundStyle(Colors.themeLanguageForeground)
                                 .onTapGesture {
                                     withAnimation {
-                                        selectedLanguage = language
+                                        viewModel.selectedLanguage = language
                                     }
                                 }
                         }
@@ -57,9 +56,9 @@ struct DetailsView: View {
                         Text("Languages").bold()
                     }
                     
-                    if let selectedLanguage = selectedLanguage {
+                    if let selectedLanguage = viewModel.selectedLanguage {
                         Section {
-                            ForEach(viewModel.countriesViewModel.countries.filter { $0.languages?.values.contains(selectedLanguage) == true && $0.cca2 != viewModel.selectedCountry.cca2 }, id: \.self) { country in
+                            ForEach(viewModel.getCountriesWithLanguage(language: selectedLanguage), id: \.self) { country in
                                 NavigationLink(
                                     destination: DetailsView(
                                         viewModel: DetailsViewModel(selectedCountry: country, countriesViewModel: viewModel.countriesViewModel)
@@ -74,17 +73,15 @@ struct DetailsView: View {
                     }
                 }
 
-                if let neighbors = viewModel.selectedCountry.borders {
+                if viewModel.hasNeighbors {
                     Section {
-                        ForEach(Array(neighbors), id: \.self) { neighbor in
-                            if let country = viewModel.countriesViewModel.countries.first(where: { $0.cca3 == neighbor}) {
-                                NavigationLink(
-                                    destination: DetailsView(
-                                        viewModel: DetailsViewModel(selectedCountry: country, countriesViewModel: viewModel.countriesViewModel)
-                                    )
-                                ) {
-                                    CountryCell(country: country)
-                                }
+                        ForEach(viewModel.neighboringCountries, id: \.self) { country in
+                            NavigationLink(
+                                destination: DetailsView(
+                                    viewModel: DetailsViewModel(selectedCountry: country, countriesViewModel: viewModel.countriesViewModel)
+                                )
+                            ) {
+                                CountryCell(country: country)
                             }
                         }
                     } header: {
